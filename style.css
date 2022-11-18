@@ -105,16 +105,41 @@
 /* -------------------------------------------------- */
 .ex-10-icon {
     font-size: 60px;
+    animation-name: ex10;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
+@keyframes ex10 {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
 
 /* -------------------------------------------------- */
 .ex-11-icon {
     font-size: 60px;
+    animation-name: ex11;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
+@keyframes ex11 {
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 /* -------------------------------------------------- */
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
