@@ -120,6 +120,9 @@
 /* -------------------------------------------------- */
 .ex-11-icon {
     font-size: 60px;
+}
+
+.ex-11-icon:hover {
     animation-name: ex11;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -140,7 +143,7 @@
 
 /* -------------------------------------------------- */
 
-.ex-12-button, .ex-13-button {
+.ex-12-button {
     position: relative;
     display: block;
     width: 200px;
@@ -153,7 +156,8 @@
     text-align: center;
     text-decoration: none;
 }
-.ex-12-top-white, .ex-13-top-white {
+
+.ex-12-top-white {
     position: absolute;
     top: -10px;
     left: 10%;
@@ -161,11 +165,146 @@
     width: 60px;
     height: 20px;
 }
-.ex-12-bottom-white, .ex-13-bottom-white {
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: ex12top;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes ex12top {
+    50% {
+        top: -10px;
+        left: 60%;
+    }
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+
+.ex-12-bottom-white {
     position: absolute;
     bottom: -10px;
     right: 20%;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: ex12bottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes ex12bottom {
+    50% {
+        bottom: -10px;
+        right: 60%;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
+
+/* ----------------------------------------------- */
+
+.ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: ex13top;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes ex13top {
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+    30%{
+        top: -10px;
+        left: 80%;
+    }
+    40%{
+        top: 50px;
+        left: 80%;
+    }
+    70%{
+        top: 50px;
+        left: -10%;
+    }
+    90% {
+        top: -10px;
+        left: -10%;
+    }
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+
+.ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: ex13bottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes ex13bottom {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        bottom: -10px;
+        right: 80%;
+    }
+    40% {
+        bottom: 50px;
+        right: 80%;
+    }
+    70% {
+        bottom: 50px;
+        right: -10%;
+    }
+    90% {
+        bottom: -10px;
+        right: -10%;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
 }
